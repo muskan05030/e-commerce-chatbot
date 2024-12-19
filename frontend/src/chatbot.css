@@ -1,0 +1,73 @@
+/* chatbot.css */
+.chatbot-container {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 500px;
+    margin: auto;
+  }
+  
+  .chatbot-container h2 {
+    color: #333;
+    text-align: center;
+  }
+  
+  .chatbot-container .chat-history {
+    max-height: 400px;
+    overflow-y: auto;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .chatbot-container .chat-history .user {
+    color: #007bff;
+    text-align: right;
+    margin-bottom: 5px;
+  }
+  
+  .chatbot-container .chat-history .chatbot {
+    color: #333;
+    text-align: left;
+    margin-bottom: 5px;
+  }
+  
+  .chatbot-container input[type="text"] {
+    padding: 10px;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .chatbot-container button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .chatbot-container button:hover {
+    background-color: #218838;
+  }
+  
+  .chatbot-container .logout-btn {
+    padding: 10px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
+  .chatbot-container .logout-btn:hover {
+    background-color: #c82333;
+  }
+  
