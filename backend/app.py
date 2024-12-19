@@ -1,11 +1,11 @@
 from flask import Flask, jsonify, request
 from flask_cors import CORS
 import random
+import os
 
 app = Flask(__name__)
 CORS(app)
 
-# Mock Product Data with Categories
 products = [
     {"id": 1, "name": "Smartphone A1", "price": 299.99, "category": "Electronics"},
     {"id": 2, "name": "Smartphone B2", "price": 499.99, "category": "Electronics"},
@@ -24,7 +24,6 @@ products = [
     {"id": 15, "name": "Non-Stick Pan", "price": 39.99, "category": "Kitchen"},
 ]
 
-# Mock User Authentication
 users = {"user1": "password1", "user2": "password2"}
 
 @app.route('/login', methods=['POST'])
@@ -47,4 +46,5 @@ def get_products():
     return jsonify(filtered_products)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))  
+    app.run(host="0.0.0.0", port=port)  
